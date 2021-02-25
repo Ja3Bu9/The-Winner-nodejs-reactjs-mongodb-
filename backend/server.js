@@ -48,6 +48,9 @@ app.use('/question', QuestionRouter)
 const UserRouter = require("./app/routes/route.user");
 app.use('/user', UserRouter)
 
+const AdminRouter = require("./app/routes/route.admin");
+app.use('/admin', AdminRouter)
+
 
 
 var server = app.listen(port, () => {
