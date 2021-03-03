@@ -19,6 +19,10 @@ const UserSchema = mongoose.Schema({
             trim :true,
             minlength:3
         },
+        score : {
+            default : 0,
+            minlength:1
+        }
         },
     {
         versionKey : false

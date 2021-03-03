@@ -5,7 +5,7 @@ const winston = require('winston');
 const logConfiguration = {
     'transports': [
         new winston.transports.File({
-            filename: '../logs/logs.log'
+            filename: 'logs/logs.log'
         })
     ]
 }
@@ -30,14 +30,14 @@ router.get('/', async (req,res) =>{
 router.get('/get/:idCategory', async (req,res) =>{
     try{
         const category = await Category.findById(req.params.idCategory);  //findOne = findById
-        res.json(category);
+        res.status(200).json(category);
         var newDate = new Date();
 
         logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Getting category where id :'+ req.params.idCategory)
 
     }
     catch(err){
-        res.json({ 
+        res.status(404).json({ 
             message : err
         });
     }
@@ -52,14 +52,14 @@ router.post('/add/', async (req,res) =>{
 
     try{
         const savedCategory = await category.save()
-        res.json(savedCategory)
+        res.status(201).json(savedCategory)
         var newDate = new Date();
 
         logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Adding Category name :'+ req.body.nomCategory)
        
     }
     catch(err){
-        res.json({message: err});
+        res.status(400).json({message: err});
      }
 });
 
@@ -71,7 +71,7 @@ router.delete('/delete/:idCategory', async (req,res) =>{
         const removedCategory = await Category.remove({
             _id:req.params.idCategory
         });
-        res.json(removedCategory);
+        res.status(200).json(removedCategory);
         var newDate = new Date();
 
         logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Deleting Category id :'+ req.params.idCategory)
