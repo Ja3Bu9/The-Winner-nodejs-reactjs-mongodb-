@@ -1,12 +1,24 @@
 const router = require("express").Router();
 const Category = require('../models/model.category');
+const winston = require('winston');
 
+const logConfiguration = {
+    'transports': [
+        new winston.transports.File({
+            filename: '../logs/logs.log'
+        })
+    ]
+}
+
+const logger = winston.createLogger(logConfiguration)
 
 //Get all the posts
 router.get('/', async (req,res) =>{
     try{
         const Categorys = await Category.find();
         res.json(Categorys);
+        var newDate = new Date();
+        logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Getting all categorys')
     }
     catch(err){
         res.json({message:err});
@@ -19,6 +31,10 @@ router.get('/get/:idCategory', async (req,res) =>{
     try{
         const category = await Category.findById(req.params.idCategory);  //findOne = findById
         res.json(category);
+        var newDate = new Date();
+
+        logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Getting category where id :'+ req.params.idCategory)
+
     }
     catch(err){
         res.json({ 
@@ -37,6 +53,10 @@ router.post('/add/', async (req,res) =>{
     try{
         const savedCategory = await category.save()
         res.json(savedCategory)
+        var newDate = new Date();
+
+        logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Adding Category name :'+ req.body.nomCategory)
+       
     }
     catch(err){
         res.json({message: err});
@@ -52,6 +72,10 @@ router.delete('/delete/:idCategory', async (req,res) =>{
             _id:req.params.idCategory
         });
         res.json(removedCategory);
+        var newDate = new Date();
+
+        logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Deleting Category id :'+ req.params.idCategory)
+
     }
     catch(err){
         res.json({ 
@@ -69,6 +93,10 @@ router.put('/update/:idCategory', async (req,res) =>{
             _id:req.params.idCategory}, {$set :{nomCategory :req.body.nomCategory}
         });
         res.json(updatedCategory);
+        var newDate = new Date();
+
+        logger.info(newDate.toLocaleDateString()+' - '+newDate.toLocaleTimeString()+' - '+'Updating Category id :'+ req.params.idCategory)
+
     }
     catch(err){
         res.json({ 

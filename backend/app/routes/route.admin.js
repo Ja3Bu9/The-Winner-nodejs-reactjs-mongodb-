@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Admin = require('../models/model.admin');
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const authenticate = require('../middleware/authenticateadmin')
+const authenticateAdmin = require('../middleware/authenticateadmin')
 
 // register
 router.post('/register/', async(req,res)=>{
@@ -37,7 +37,7 @@ router.post('/register/', async(req,res)=>{
 })
 
 //Get all the Users
-router.get('/', authenticate ,async (req,res) =>{
+router.get('/', authenticateAdmin ,async (req,res) =>{
     try{
         const Admins = await Admin.find();
         res.json(Admins);
