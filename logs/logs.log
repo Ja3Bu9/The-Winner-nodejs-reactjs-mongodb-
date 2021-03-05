@@ -1,0 +1,50 @@
+{"message":"3/3/2021 - 11:50:46 AM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 11:56:15 AM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:04:35 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:07:06 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:07:06 PM - Deleting Category id :603f6d2e3984563be81e8f61","level":"info"}
+{"message":"3/3/2021 - 12:11:02 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:11:02 PM - Deleting Category id :6034c9b56094731558d0803e","level":"info"}
+{"message":"3/3/2021 - 12:13:09 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:13:09 PM - Deleting Category id :603f6ac2bfea7e26b04da7f7","level":"info"}
+{"message":"3/3/2021 - 12:14:29 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:14:29 PM - Deleting Category id :603f6ac2bfea7e26b04da7f7","level":"info"}
+{"message":"3/3/2021 - 12:16:56 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:16:56 PM - Deleting Category id :603f6ac2bfea7e26b04da7f7","level":"info"}
+{"message":"3/3/2021 - 12:17:18 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:17:18 PM - Deleting Category id :603f6ac2bfea7e26b04da7f7","level":"info"}
+{"message":"3/3/2021 - 12:20:33 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:20:33 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:20:33 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:20:33 PM - Deleting Category id :603f6ac2bfea7e26b04da7f7","level":"info"}
+{"message":"3/3/2021 - 12:22:20 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:22:20 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:22:20 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:22:21 PM - Deleting Category id :6034c9b06094731558d0803d","level":"info"}
+{"message":"3/3/2021 - 12:23:07 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:23:07 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:23:07 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:23:07 PM - Updating Category id :603f710105a18b3d68db8b5a","level":"info"}
+{"message":"3/3/2021 - 12:23:07 PM - Deleting Category id :603f710105a18b3d68db8b5a","level":"info"}
+{"message":"3/3/2021 - 12:25:43 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:25:43 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:25:43 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:25:44 PM - Updating Category id :603f716cd4d0a10544fc81a6","level":"info"}
+{"message":"3/3/2021 - 12:25:44 PM - Deleting Category id :603f716cd4d0a10544fc81a6","level":"info"}
+{"message":"3/3/2021 - 12:26:24 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:26:24 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:26:24 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:26:24 PM - Updating Category id :603f719bfc228433b02bbe51","level":"info"}
+{"message":"3/3/2021 - 12:26:24 PM - Deleting Category id :603f719bfc228433b02bbe51","level":"info"}
+{"message":"3/3/2021 - 12:28:21 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:28:21 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:28:21 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:28:21 PM - Updating Category id :603f723787c04e24d0a55fdb","level":"info"}
+{"message":"3/3/2021 - 12:28:21 PM - Getting category where id :603f723787c04e24d0a55fdb","level":"info"}
+{"message":"3/3/2021 - 12:28:21 PM - Deleting Category id :603f723787c04e24d0a55fdb","level":"info"}
+{"message":"3/3/2021 - 12:29:10 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:29:10 PM - Adding Category name :test","level":"info"}
+{"message":"3/3/2021 - 12:29:10 PM - Getting all categorys","level":"info"}
+{"message":"3/3/2021 - 12:29:10 PM - Updating Category id :603f72d512c7aa4ad8787ae7","level":"info"}
+{"message":"3/3/2021 - 12:29:10 PM - Getting category where id :603f72d512c7aa4ad8787ae7","level":"info"}
+{"message":"3/3/2021 - 12:29:10 PM - Deleting Category id :603f72d512c7aa4ad8787ae7","level":"info"}
